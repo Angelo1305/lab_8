@@ -1,60 +1,63 @@
-/* Top Navigation Styling */
-nav {
+/* General reset just in case */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Navbar styles */
+#main-navbar {
   background-color: blue;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0;
+  padding: 10px 0;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+#navbar-container {
+  max-width: 960px;
+  margin: 0 auto;
   text-align: center;
 }
 
-nav li {
+#navbar-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar-container li {
   display: inline-block;
-  margin: 0;
-  padding: 0;
+  margin: 0 10px;
 }
 
-nav a {
-  display: block;
+#navbar-container a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
   padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-  background-color: #000;
+  display: inline-block;
 }
 
-/* Sidebar Styling */
-aside {
-  position: fixed;
-  right: 0%;
+/* Highlight the active page */
+#onpage a {
   background-color: red;
-  height: 100%;
-  width: 20%;
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
 }
 
-aside ul {
-  list-style-type: none;
+/* Sidebar styles */
+#sidebar {
+  width: 200px;
+  padding: 20px;
+}
+
+#sidebar-container ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-aside li {
-  display: block;
-  padding: 15px 0;
+#sidebar-container li {
+  margin-bottom: 10px;
 }
 
-aside a {
-  display: block;
-  color: #fff;
+#sidebar-container a {
   text-decoration: none;
-  background-color: #000;
+  color: blue;
 }
